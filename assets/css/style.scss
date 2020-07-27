@@ -1,0 +1,209 @@
+@import "deafult";
+@import "fonts";
+/*
+    ==============
+       Navigation
+    ============== 
+*/
+.section{
+  overflow: hidden;
+}
+.mh-nav {
+  width: 100%;
+  padding: 0px 0;
+}
+.mh-header {
+  padding: 0;
+  &.nav-strict {
+    padding: 0;
+    z-index: 9999;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    background: #fff;
+    .mh-nav {
+      padding: 0px 0px;
+    }
+  }
+  .navbar-nav {
+    padding-left: 100px;
+    .nav_item {
+      padding: 16px 25px;
+      a {
+        border-bottom: 1px solid transparent;
+        font-family: "Gilroy-Medium.ttf";
+        font-size: 16px;
+        line-height: 19px;
+        color: #E8B297;
+        text-transform: capitalize;
+        cursor: pointer;
+        padding: 15px 0px;
+        opacity: .8;
+        &.nav-link {
+          padding-left: 0;
+          padding-right: 0;
+        }
+        &:hover {
+          color: #E8B297;
+          opacity: 1;
+        }
+      }
+    }
+    &.nav-btn{
+      padding-left: 0;
+      li{
+        a{
+          color: rgba(255, 255, 255, 0.9);
+          border: 2px solid #E8B297;
+          box-sizing: border-box;
+          border-radius: 4px;
+          padding: 15px 35px !important;
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+//HOME SECTION 
+
+.portfolio-home{
+  background: #0E1630;
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  .home_inner{
+    z-index: 1;
+    position: relative;
+    transform: perspective(600);
+    transition: transform .4s;
+    #sm_logo{
+      path{
+        fill: transparent;
+        &:nth-child(2){
+          stroke-dasharray: 1133;
+          stroke-dashoffset: 1133;
+          animation: logo_anim 4.9s ease forwards;   
+          animation-delay: 3s;   
+        }
+        &:nth-child(3){
+          stroke-dasharray: 1073;
+          stroke-dashoffset: 1073;
+          animation: logo_anim 5.6s ease forwards;  
+          animation-delay: 3s;   
+        }   
+        &:nth-child(4){
+          stroke-dasharray: 693;
+          stroke-dashoffset: 693;
+          animation: logo_anim 4.9s ease forwards;  
+          animation-delay: 3s;   
+        } 
+        &:nth-child(5){
+          stroke-dasharray: 1213;
+          stroke-dashoffset: 1213;
+          animation: logo_anim 6.7s ease forwards;  
+          animation-delay: 3s;   
+        }  
+        &:nth-child(6){
+          stroke-dasharray: 1198;
+          stroke-dashoffset: 1198;
+          animation: logo_anim 4.9s ease forwards;  
+          animation-delay: 3s;   
+        }  
+        &:nth-child(7){
+          stroke-dasharray: 934;
+          stroke-dashoffset: 934;
+          animation: logo_anim 4.9s ease forwards;  
+          animation-delay: 3s;   
+        }  
+        &:nth-child(8){
+          stroke-dasharray: 693;
+          stroke-dashoffset: 693;
+          animation: logo_anim 4.9s ease forwards;  
+          animation-delay: 3s;   
+        } 
+        &:nth-child(9){
+          stroke-dasharray: 1133;
+          stroke-dashoffset: 1133;
+          animation: logo_anim 4.9s ease forwards; 
+          animation-delay: 3s;    
+        }   
+        &:nth-child(10){
+          stroke-dasharray: 934;
+          stroke-dashoffset: 934;
+          animation: logo_anim 4.9s ease forwards;  
+          animation-delay: 3s;   
+        }   
+        &:nth-child(11){
+          stroke-dasharray: 1073;
+          stroke-dashoffset: 1073;
+          animation: logo_anim 5.6s ease forwards;  
+          animation-delay: 3s;   
+        }  
+        &:nth-child(12){
+          stroke-dasharray: 1881;
+          stroke-dashoffset: 1881;
+          animation: logo_anim 4.8s ease forwards;  
+          animation-delay: 3s;   
+        }                           
+      }
+    }  
+    h1{
+      font-size: 50px;
+      text-align: center;
+      text-align: center;
+      margin-top: 20px;
+      color: #fff;
+    } 
+  }
+  .bg-shape{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 0;
+  }
+}
+@keyframes logo_anim{
+  to{
+    stroke-dashoffset: 0;
+  }
+} 
+@keyframes path_fill{
+  from{
+    fill: transparent;
+  }
+  to{
+    fill: #E8B297;
+  }
+}
+
+.scene {
+	position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 0;
+}
+
+
+
+
+.portfolio-home{
+  height: 100vh;
+  h1{
+    font-family: "Gilroy-Bold.ttf";
+    font-size: 150px;
+    color: #ffffff;
+    font-weight: bold;
+    letter-spacing: 60px;
+    transform: translateX(00%);
+  }
+}
+body{
+  background: #0E1630;
+}

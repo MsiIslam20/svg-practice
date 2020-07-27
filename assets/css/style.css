@@ -1,0 +1,321 @@
+body, html {
+  width: 100%;
+  position: relative;
+  font-family: "Gilroy-Regular.ttf";
+}
+
+body {
+  font-size: 100%;
+  position: relative;
+  font-size: 10px;
+  background: #FFF;
+  overflow-x: hidden !important;
+  font-family: "Gilroy-Regular.ttf";
+}
+
+.relative {
+  position: relative;
+}
+
+.hidden {
+  overflow: hidden;
+}
+
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+@font-face {
+  font-family: "Gilroy-Light.ttf";
+  src: url("../fonts/Gilroy-Light.ttf");
+}
+
+@font-face {
+  font-family: "Gilroy-Regular.ttf";
+  src: url("../fonts/Gilroy-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Gilroy-Medium.ttf";
+  src: url("../fonts/Gilroy-Medium.ttf");
+}
+
+@font-face {
+  font-family: "Gilroy-Bold.ttf";
+  src: url("../fonts/Gilroy-Bold.ttf");
+}
+
+/*
+    ==============
+       Navigation
+    ============== 
+*/
+.section {
+  overflow: hidden;
+}
+
+.mh-nav {
+  width: 100%;
+  padding: 0px 0;
+}
+
+.mh-header {
+  padding: 0;
+}
+
+.mh-header.nav-strict {
+  padding: 0;
+  z-index: 9999;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  background: #fff;
+}
+
+.mh-header.nav-strict .mh-nav {
+  padding: 0px 0px;
+}
+
+.mh-header .navbar-nav {
+  padding-left: 100px;
+}
+
+.mh-header .navbar-nav .nav_item {
+  padding: 16px 25px;
+}
+
+.mh-header .navbar-nav .nav_item a {
+  border-bottom: 1px solid transparent;
+  font-family: "Gilroy-Medium.ttf";
+  font-size: 16px;
+  line-height: 19px;
+  color: #E8B297;
+  text-transform: capitalize;
+  cursor: pointer;
+  padding: 15px 0px;
+  opacity: .8;
+}
+
+.mh-header .navbar-nav .nav_item a.nav-link {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.mh-header .navbar-nav .nav_item a:hover {
+  color: #E8B297;
+  opacity: 1;
+}
+
+.mh-header .navbar-nav.nav-btn {
+  padding-left: 0;
+}
+
+.mh-header .navbar-nav.nav-btn li a {
+  color: rgba(255, 255, 255, 0.9);
+  border: 2px solid #E8B297;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 4px;
+  padding: 15px 35px !important;
+  opacity: 1;
+}
+
+.portfolio-home {
+  background: #0E1630;
+  width: 100%;
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.portfolio-home .home_inner {
+  z-index: 1;
+  position: relative;
+  -webkit-transform: perspective(600);
+          transform: perspective(600);
+  -webkit-transition: -webkit-transform .4s;
+  transition: -webkit-transform .4s;
+  transition: transform .4s;
+  transition: transform .4s, -webkit-transform .4s;
+}
+
+.portfolio-home .home_inner #sm_logo path {
+  fill: transparent;
+}
+
+.portfolio-home .home_inner #sm_logo path:nth-child(2) {
+  stroke-dasharray: 1133;
+  stroke-dashoffset: 1133;
+  -webkit-animation: logo_anim 4.9s ease forwards;
+          animation: logo_anim 4.9s ease forwards;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+
+.portfolio-home .home_inner #sm_logo path:nth-child(3) {
+  stroke-dasharray: 1073;
+  stroke-dashoffset: 1073;
+  -webkit-animation: logo_anim 5.6s ease forwards;
+          animation: logo_anim 5.6s ease forwards;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+
+.portfolio-home .home_inner #sm_logo path:nth-child(4) {
+  stroke-dasharray: 693;
+  stroke-dashoffset: 693;
+  -webkit-animation: logo_anim 4.9s ease forwards;
+          animation: logo_anim 4.9s ease forwards;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+
+.portfolio-home .home_inner #sm_logo path:nth-child(5) {
+  stroke-dasharray: 1213;
+  stroke-dashoffset: 1213;
+  -webkit-animation: logo_anim 6.7s ease forwards;
+          animation: logo_anim 6.7s ease forwards;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+
+.portfolio-home .home_inner #sm_logo path:nth-child(6) {
+  stroke-dasharray: 1198;
+  stroke-dashoffset: 1198;
+  -webkit-animation: logo_anim 4.9s ease forwards;
+          animation: logo_anim 4.9s ease forwards;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+
+.portfolio-home .home_inner #sm_logo path:nth-child(7) {
+  stroke-dasharray: 934;
+  stroke-dashoffset: 934;
+  -webkit-animation: logo_anim 4.9s ease forwards;
+          animation: logo_anim 4.9s ease forwards;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+
+.portfolio-home .home_inner #sm_logo path:nth-child(8) {
+  stroke-dasharray: 693;
+  stroke-dashoffset: 693;
+  -webkit-animation: logo_anim 4.9s ease forwards;
+          animation: logo_anim 4.9s ease forwards;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+
+.portfolio-home .home_inner #sm_logo path:nth-child(9) {
+  stroke-dasharray: 1133;
+  stroke-dashoffset: 1133;
+  -webkit-animation: logo_anim 4.9s ease forwards;
+          animation: logo_anim 4.9s ease forwards;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+
+.portfolio-home .home_inner #sm_logo path:nth-child(10) {
+  stroke-dasharray: 934;
+  stroke-dashoffset: 934;
+  -webkit-animation: logo_anim 4.9s ease forwards;
+          animation: logo_anim 4.9s ease forwards;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+
+.portfolio-home .home_inner #sm_logo path:nth-child(11) {
+  stroke-dasharray: 1073;
+  stroke-dashoffset: 1073;
+  -webkit-animation: logo_anim 5.6s ease forwards;
+          animation: logo_anim 5.6s ease forwards;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+
+.portfolio-home .home_inner #sm_logo path:nth-child(12) {
+  stroke-dasharray: 1881;
+  stroke-dashoffset: 1881;
+  -webkit-animation: logo_anim 4.8s ease forwards;
+          animation: logo_anim 4.8s ease forwards;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+
+.portfolio-home .home_inner h1 {
+  font-size: 50px;
+  text-align: center;
+  text-align: center;
+  margin-top: 20px;
+  color: #fff;
+}
+
+.portfolio-home .bg-shape {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 0;
+}
+
+@-webkit-keyframes logo_anim {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes logo_anim {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@-webkit-keyframes path_fill {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: #E8B297;
+  }
+}
+
+@keyframes path_fill {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: #E8B297;
+  }
+}
+
+.scene {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 0;
+}
+
+.portfolio-home {
+  height: 100vh;
+}
+
+.portfolio-home h1 {
+  font-family: "Gilroy-Bold.ttf";
+  font-size: 150px;
+  color: #ffffff;
+  font-weight: bold;
+  letter-spacing: 60px;
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+
+body {
+  background: #0E1630;
+}
+/*# sourceMappingURL=style.css.map */
