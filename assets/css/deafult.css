@@ -1,0 +1,28 @@
+body, html {
+  width: 100%;
+  position: relative;
+  font-family: "Gilroy-Regular.ttf";
+}
+
+body {
+  font-size: 100%;
+  position: relative;
+  font-size: 10px;
+  background: #FFF;
+  overflow-x: hidden !important;
+  font-family: "Gilroy-Regular.ttf";
+}
+
+.relative {
+  position: relative;
+}
+
+.hidden {
+  overflow: hidden;
+}
+
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+/*# sourceMappingURL=deafult.css.map */

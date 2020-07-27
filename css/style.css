@@ -1,0 +1,12 @@
+#cursor {
+  position: fixed;
+  text-align: center;
+  width: 80px;
+  height: 80px;
+  z-index: 1000;
+  -webkit-transform-origin: center center;
+  transform-origin: center center;
+  pointer-events: none;
+  mix-blend-mode: exclusion;
+}
+/*# sourceMappingURL=style.css.map */
